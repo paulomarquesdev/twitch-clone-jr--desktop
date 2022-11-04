@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png">
+    <title>Twitch</title>
+</head>
+<body>
+    <nav class="nav__bar">
+        <ul class="navigation_start">
+            <li class="nav__item logo">
+                <svg overflow="visible" width="40px" height="40px" version="1.1" viewBox="0 0 40 40" x="0px" y="0px">
+                        <g>
+                            <polygon points="13 8 8 13 8 31 14 31 14 36 19 31 23 31 32 22 32 8" class="layer-purple">
+                                <animate dur="150ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="points" from="13 8 8 13 8 31 14 31 14 36 19 31 23 31 32 22 32 8" to="16 5 8 13 8 31 14 31 14 36 19 31 23 31 35 19 35 5"></animate>
+                                <animate dur="250ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="points" from="16 5 8 13 8 31 14 31 14 36 19 31 23 31 35 19 35 5" to="13 8 8 13 8 31 14 31 14 36 19 31 23 31 32 22 32 8"></animate>
+                                <animate dur="50ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="points" to="13 8 8 13 8 31 14 31 14 36 19 31 23 31 32 22 32 8" from="16 5 8 13 8 31 14 31 14 36 19 31 23 31 35 19 35 5"></animate>
+                                <animate dur="75ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="points" to="16 5 8 13 8 31 14 31 14 36 19 31 23 31 35 19 35 5" from="13 8 8 13 8 31 14 31 14 36 19 31 23 31 32 22 32 8"></animate>
+                            </polygon>
+                            <polygon points="26 25 30 21 30 10 14 10 14 25 18 25 18 29 22 25" class="layer-white">
+                                <animateTransform dur="150ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="transform" type="translate" from="0 0" to="3 -3"></animateTransform>
+                                <animateTransform dur="250ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="transform" type="translate" from="3 -3" to="0 0"></animateTransform>
+                                <animateTransform dur="50ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="transform" type="translate" from="3 -3" to="0 0"></animateTransform>
+                                <animateTransform dur="75ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="transform" type="translate" from="0 0" to="3 -3"></animateTransform>
+                            </polygon>
+                            <g class="layer-purple_eyes">
+                                <path d="M20,14 L22,14 L22,20 L20,20 L20,14 Z M27,14 L27,20 L25,20 L25,14 L27,14 Z" class="ScBody-sc-cdc1ai-3 kswvAb">
+                                    <animateTransform dur="150ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="transform" type="translate" from="0 0" to="3 -3"></animateTransform>
+                                    <animateTransform dur="250ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="transform" type="translate" from="3 -3" to="0 0"></animateTransform>
+                                    <animateTransform dur="50ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="transform" type="translate" from="3 -3" to="0 0"></animateTransform>
+                                    <animateTransform dur="75ms" begin="indefinite" fill="freeze" calcMode="spline" keyTimes="0; 1" keySplines="0.25 0.1 0.25 1" attributeName="transform" type="translate" from="0 0" to="3 -3"></animateTransform>
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+            </li>
+            <li class="nav__item following">
+                <a class="link__bar" href="http://">Seguindo</a>
+            </li>
+            <li class="nav__item search">
+                <a class="link__bar" href="http://">Procurar</a>
+            </li>
+            <li class="nav__item ico__more nav__ico">
+                <svg width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"><g><path d="M10 18a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM8 4a2 2 0 104 0 2 2 0 00-4 0z"></path></g></svg>
+            </li>
+        </ul>
+        <div class="navigation__search">
+            <input type="search" name="search__input" id="search" class="search__input" placeholder="Buscar">
+            <button type="submit" for="search" class="search__button">
+                <svg class="search__icon__svg" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path fill-rule="evenodd" d="M13.192 14.606a7 7 0 111.414-1.414l3.101 3.1-1.414 1.415-3.1-3.1zM14 9A5 5 0 114 9a5 5 0 0110 0z" clip-rule="evenodd"></path></g></svg>
+            </button>
+            
+        </div>
+        <ul class="navigation_end">
+            <li class="nav_item loot__prime nav__ico">
+                <svg class="nav_ico" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M13.798 10.456L10 6.657l-3.798 3.799L4 8.805V13h12V8.805l-2.202 1.65zM18 5v8a2 2 0 0 1-2 2H4a2.002 2.002 0 0 1-2-2V5l4 3 4-4 4 4 4-3z"></path></g></svg>
+            </li>
+            <li class="nav_item notification nav__ico">
+                <svg width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path fill-rule="evenodd" d="M4 3h12l2 4v10H2V7l2-4zm.236 4H8v1a1 1 0 001 1h2a1 1 0 001-1V7h3.764l-1-2H5.236l-1 2zM16 9h-2.17A3.001 3.001 0 0111 11H9a3.001 3.001 0 01-2.83-2H4v6h12V9z" clip-rule="evenodd"></path></g></svg>
+            </li>
+            <li class="nav_item sussuros nav__ico">
+                <svg width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1bgeryd-1 ifdSJl"><g><path fill-rule="evenodd" d="M7.828 13L10 15.172 12.172 13H15V5H5v8h2.828zM10 18l-3-3H5a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2l-3 3z" clip-rule="evenodd"></path></g></svg>
+            </li>
+            <li class="nav_item buy__bits">
+                <figure class="nav__ico">
+                    <svg width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="icon__"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 12l7-10 7 10-7 6-7-6zm2.678-.338L10 5.487l4.322 6.173-.85.728L10 11l-3.473 1.39-.849-.729z"></path></svg>
+                </figure>
+                <p class="buy__bits__text">Comprar Bits</p>
+            </li>
+            <li class="nav_item">
+                <img aria-label="Avatar do usuário" class="profile" alt="Avatar do usuário" src="https://static-cdn.jtvnw.net/jtv_user_pictures/1f93ecc3-e40d-4ff7-a65f-1465b34526c8-profile_image-70x70.png"></img>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="menu__left">
+        <div class="menu__left__followed">
+            <h2 class="menu__left__title">CANAIS SEGUIDOS</h2>
+            <img src="" alt="" class="ico__hidden">
+
+            <ul class="list__followed">
+                <li class="item__followed">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/15cec952-c1ba-4ff8-a79c-53c2fa5bd269-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">alanzoka</p>
+                            <p class="channel__game__name">God of War</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">18 mil</p>
+                    </div>
+                </li>
+                <li class="item__followed">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f4b12683-57ff-4b57-926a-67512b43a7ff-profile_image-150x150.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">Gaules</p>
+                            <p class="channel__game__name">Esportes</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">91 mil</p>
+                    </div>
+                </li>
+                <li class="item__followed">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/8e62dd94-b683-4bb0-978b-de6dc5375dd4-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">ale_apoka</p>
+                            <p class="channel__game__name">Só na conversa</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">569</p>
+                    </div>
+                </li>
+                <li class="item__followed">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/4a1be65a-ac23-40fe-acfb-f490bc907515-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">LLauqSTV</p>
+                            <p class="channel__game__name">Zomboid</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">8.7 mil</p>
+                    </div>
+                </li>
+                <li class="item__followed">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/82898771-8cc4-45ff-8b7d-4a03cf5cf0df-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">gaulestv2</p>
+                            <p class="channel__game__name">Counter Strike</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">20.2 mil</p>
+                    </div>
+                </li>
+                <!-- <li class="item__followed">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/82898771-8cc4-45ff-8b7d-4a03cf5cf0df-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">gaulestv3</p>
+                            <p class="channel__game__name">Counter Strike</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">24 mil</p>
+                    </div>
+                </li> -->
+                <li class="item__followed">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e8b0563d-a036-4bd6-bf3e-5d6b2e9300cf-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">gafallen</p>
+                            <p class="channel__game__name">Counter Strike</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">27 mil</p>
+                    </div>
+                </li>
+            </ul>
+            <button class="button__more"><span class="button__more__text">Mostrar mais</span></button>
+        </div>
+
+        <div class="menu__left__recomended">
+            <h2 class="menu__left__title">CANAIS RECOMENDADOS</h2>
+            <img src="" alt="" class="ico__hidden">
+
+            <ul class="list__recommended">
+                <li class="item__recommended">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/15cec952-c1ba-4ff8-a79c-53c2fa5bd269-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">alanzoka</p>
+                            <p class="channel__game__name">God of War</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">18 mil</p>
+                    </div>
+                </li>
+                <li class="item__recommended">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f4b12683-57ff-4b57-926a-67512b43a7ff-profile_image-150x150.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">Gaules</p>
+                            <p class="channel__game__name">Esportes</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">91 mil</p>
+                    </div>
+                </li>
+                <li class="item__recommended">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/8e62dd94-b683-4bb0-978b-de6dc5375dd4-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">ale_apoka</p>
+                            <p class="channel__game__name">Só na conversa</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">569</p>
+                    </div>
+                </li>
+                <li class="item__recommended">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/4a1be65a-ac23-40fe-acfb-f490bc907515-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">LLauqSTV</p>
+                            <p class="channel__game__name">Zomboid</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">8.7 mil</p>
+                    </div>
+                </li>
+                <li class="item__recommended">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/82898771-8cc4-45ff-8b7d-4a03cf5cf0df-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">gaulestv2</p>
+                            <p class="channel__game__name">Counter Strike</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">20.2 mil</p>
+                    </div>
+                </li>
+                <li class="item__recommended">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/82898771-8cc4-45ff-8b7d-4a03cf5cf0df-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">gaulestv3</p>
+                            <p class="channel__game__name">Counter Strike</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">24 mil</p>
+                    </div>
+                </li>
+                <li class="item__recommended">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/82898771-8cc4-45ff-8b7d-4a03cf5cf0df-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">gaulestv3</p>
+                            <p class="channel__game__name">Counter Strike</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">24 mil</p>
+                    </div>
+                </li>
+                <li class="item__recommended">
+                    <div class="channel__content">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e8b0563d-a036-4bd6-bf3e-5d6b2e9300cf-profile_image-70x70.png" alt="" class="channel__logo">
+                        <div class="channel__description">
+                            <p class="channel__name">gafallen</p>
+                            <p class="channel__game__name">Counter Strike</p>
+                        </div>
+                    </div>
+                    <div class="views__number">
+                        <img src="" alt="" class="views__number__icon">
+                        <p class="views__number__text">27 mil</p>
+                    </div>
+                </li>
+            </ul>
+            <button class="button__more"><span class="button__more__text">Mostrar mais</span></button>
+        </div>
+    </nav>
+
+    <section class="feed">
+        <section class="carrossel">
+            <div class="carrossel__video__main video__main">
+                <img class="video__player foto" src="./assets/img/ft.png" alt="">
+                <!-- <iframe class="video__player" width="470px" height="300px" src="https://www.youtube.com/embed/MaPvbLdlf4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <div class="channel__info__live__main">
+                    <div class="live__info__main">
+                        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f4b12683-57ff-4b57-926a-67512b43a7ff-profile_image-70x70.png" alt="logo do canal" class="channel__logo__carrossel">
+                        <div class="header">
+                            <h3 class="live__channel__name">Gaules</h3>
+                            <h3 class="live__game__name">Zomboid</h3>
+                            <p class="live__views__info">302 mil espectadores</p>
+                        </div>
+                    </div>
+                    <div class="channel__about">
+                        <a href="" class="live__tag">Português</a>
+                        <p class="live__description">
+                            Mais um guerreiro da Maior Tribo do Mundo! Atuei como jogador profissional de CS por quase uma década, fui o primeiro treinador a ser campeão do mundo em 2007 com o MIBR. Acertei um pouco, errei muito, ganhei bastante coisa e tbm perdi demais! Atualmente faço live todos os dias aqui na Twitch!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <span class="layers__secondary"></span>
+            <span class="layers__bg"></span>
+        </section>
+
+        <section class="section__live">
+            <h2 class="section__title">Canais ao vivo que achamos que vai gostar</h2>
+            <ul class="live__list">
+                <li class="live__card__video">
+                    <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_gaules-440x248.jpg" alt="" class="live__video--md">
+                    
+                    <div class="live__card__content">
+                        <div class="info__live__profile">
+                            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f4b12683-57ff-4b57-926a-67512b43a7ff-profile_image-50x50.png" alt="" class="channel__logo--lg">
+                            <div class="live__card__info">
+                                <h3 class="live__title">FALTA POUCO PRO MAJOR RIO</h3>
+                                <p class="channel__title">Gaules</p>
+                                <p class="game__title">Counter-Strike: Global Offensive</p>
+                                <a href="" class="live__tag">Português</a>
+                            </div>
+                        </div>
+                        <div class="channel__live__options">
+                            <svg class="channel__live__options--svg" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"><g><path d="M10 18a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM8 4a2 2 0 104 0 2 2 0 00-4 0z"></path></g></svg>
+                        </div>                        
+                    </div>
+                </li>
+                <li class="live__card__video">
+                    <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_ale_apoka-440x248.jpg" alt="" class="live__video--md"></img>
+                    
+                    <div class="live__card__content">
+                        <div class="info__live__profile">
+                            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/8e62dd94-b683-4bb0-978b-de6dc5375dd4-profile_image-50x50.png" alt="" class="channel__logo--lg">
+                            <div class="live__card__info">
+                                <h3 class="live__title">O MAJOR ESTÁ CHEGANDO</h3>
+                                <p class="channel__title">ale_apoka</p>
+                                <p class="game__title">Counter-Strike: Global Offensive</p>
+                                <a href="" class="live__tag">Português</a>
+                            </div>
+                        </div>
+                        <div class="channel__live__options">
+                            <svg class="channel__live__options--svg" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"><g><path d="M10 18a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM8 4a2 2 0 104 0 2 2 0 00-4 0z"></path></g></svg>
+                        </div>
+                    </div>
+                </li>
+                <li class="live__card__video">
+                    <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_liminhag0d-440x248.jpg" alt="" class="live__video--md"></img>
+                    
+                    <div class="live__card__content">
+                        <div class="info__live__profile">
+                            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/308fa859-303d-44eb-a383-96eb6c18e78a-profile_image-50x50.png" alt="" class="channel__logo--lg">
+                            <div class="live__card__info">
+                                <h3 class="live__title">Reprise Inter de Limão</h3>
+                                <p class="channel__title">liminhagOd</p>
+                                <p class="game__title">FIFA 23</p>
+                                <a href="" class="live__tag">Português</a>
+                            </div>
+                        </div>
+                        <div class="channel__live__options">
+                            <svg class="channel__live__options--svg" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"><g><path d="M10 18a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM8 4a2 2 0 104 0 2 2 0 00-4 0z"></path></g></svg>
+                        </div>
+                    </div>
+                </li>
+                <li class="live__card__video">
+                    <img src="https://static-cdn.jtvnw.net/previews-ttv/live_user_officialf0rest-440x248.jpg" alt="" class="live__video--md"></img>
+                    
+                    <div class="live__card__content">
+                        <div class="info__live__profile">
+                            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/8ce90637-35c1-450b-ad2b-c1247c585c8a-profile_image-50x50.png" alt="" class="channel__logo--lg">
+                            <div class="live__card__info">
+                                <h3 class="live__title">Officialf0rest</h3>
+                                <p class="channel__title">FACEIT ELO SUPERMEGAGRIND</p>
+                                <p class="game__title">Counter-Strike: Global Offensive</p>
+                                <a href="" class="live__tag">Português</a>
+                            </div>
+                        </div>
+                        <div class="channel__live__options">
+                            <svg class="channel__live__options--svg" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"><g><path d="M10 18a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM8 4a2 2 0 104 0 2 2 0 00-4 0z"></path></g></svg>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="expand">
+                <p class="expande__text">Mostrar mais</p>
+                <div class="expande__icon">
+                    <svg class="expande__icon__svg" type="color-fill-current" width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScSvg-sc-1j5mt50-1 jxWtmu"><g><path d="M14.5 6.5L10 11 5.5 6.5 4 8l6 6 6-6-1.5-1.5z"></path></g></svg>
+                </div>
+            </div>
+        </section>
+        
+        <!-- <section class="section__directory">
+            <ul class="directory__list">
+                <li class="directory__card">
+                    <p class="directory__title"></p>
+                    <img src="" alt="" class="directory__img">
+                </li>
+                <li class="directory__card">
+                    <p class="directory__title"></p>
+                    <img src="" alt="" class="directory__img">
+                </li>
+                <li class="directory__card">
+                    <p class="directory__title"></p>
+                    <img src="" alt="" class="directory__img">
+                </li>
+                <li class="directory__card">
+                    <p class="directory__title"></p>
+                    <img src="" alt="" class="directory__img">
+                </li>
+                <li class="directory__card">
+                    <p class="directory__title"></p>
+                    <img src="" alt="" class="directory__img">
+                </li>
+            </ul>
+        </section>
+
+        <section class="section__category">
+            <h2 class="section__title">Categorias que achamos que vai gostar</h2>
+            <ul class="category__list">
+                <li class="category__card">
+                    <img src="" alt="" class="category_img">
+                    
+                    <div class="category__card__info">
+                        <h3 class="category__title"></h3>
+                        <img src="" alt="" class="category__card__options">
+                    </div>
+
+                    <p class="views__number"></p>
+
+                    <ul class="tags__card__list">
+                        <a href="" class="tag tag__item"></a>
+                        <a href="" class="tag tag__item"></a>
+                    </ul>
+                    
+                </li>
+                <li class="category__card">
+                    <img src="" alt="" class="category_img">
+                    
+                    <div class="category__card__info">
+                        <h3 class="category__title"></h3>
+                        <img src="" alt="" class="category__card__options">
+                    </div>
+
+                    <p class="views__number"></p>
+
+                    <ul class="tags__card__list">
+                        <a href="" class="tag tag__item"></a>
+                        <a href="" class="tag tag__item"></a>
+                    </ul>
+                    
+                </li>
+                <li class="category__card">
+                    <img src="" alt="" class="category_img">
+                    
+                    <div class="category__card__info">
+                        <h3 class="category__title"></h3>
+                        <img src="" alt="" class="category__card__options">
+                    </div>
+
+                    <p class="views__number"></p>
+
+                    <ul class="tags__card__list">
+                        <a href="" class="tag tag__item"></a>
+                        <a href="" class="tag tag__item"></a>
+                    </ul>
+                    
+                </li>
+                <li class="category__card">
+                    <img src="" alt="" class="category_img">
+                    
+                    <div class="category__card__info">
+                        <h3 class="category__title"></h3>
+                        <img src="" alt="" class="category__card__options">
+                    </div>
+
+                    <p class="views__number"></p>
+
+                    <ul class="tags__card__list">
+                        <a href="" class="tag tag__item"></a>
+                        <a href="" class="tag tag__item"></a>
+                    </ul>
+                    
+                </li>
+                <li class="category__card">
+                    <img src="" alt="" class="category_img">
+                    
+                    <div class="category__card__info">
+                        <h3 class="category__title"></h3>
+                        <img src="" alt="" class="category__card__options">
+                    </div>
+
+                    <p class="views__number"></p>
+
+                    <ul class="tags__card__list">
+                        <a href="" class="tag tag__item"></a>
+                        <a href="" class="tag tag__item"></a>
+                    </ul>
+                    
+                </li>
+                <li class="category__card">
+                    <img src="" alt="" class="category_img">
+                    
+                    <div class="category__card__info">
+                        <h3 class="category__title"></h3>
+                        <img src="" alt="" class="category__card__options">
+                    </div>
+
+                    <p class="views__number"></p>
+
+                    <ul class="tags__card__list">
+                        <a href="" class="tag tag__item"></a>
+                        <a href="" class="tag tag__item"></a>
+                    </ul>
+                    
+                </li>
+                <li class="category__card">
+                    <img src="" alt="" class="category_img">
+                    
+                    <div class="category__card__info">
+                        <h3 class="category__title"></h3>
+                        <img src="" alt="" class="category__card__options">
+                    </div>
+
+                    <p class="views__number"></p>
+
+                    <ul class="tags__card__list">
+                        <a href="" class="tag tag__item"></a>
+                        <a href="" class="tag tag__item"></a>
+                    </ul>
+                    
+                </li>
+                <li class="category__card">
+                    <img src="" alt="" class="category_img">
+                    
+                    <div class="category__card__info">
+                        <h3 class="category__title"></h3>
+                        <img src="" alt="" class="category__card__options">
+                    </div>
+
+                    <p class="views__number"></p>
+
+                    <ul class="tags__card__list">
+                        <a href="" class="tag tag__item"></a>
+                        <a href="" class="tag tag__item"></a>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </section> -->
+    </section>
+</body>
+</html>
